@@ -1,0 +1,19 @@
+# This is a Declarative Automation Bundle definition for iol-challenge-data-engineer.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: iol-challenge-data-engineer
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-692c9f37-d636.cloud.databricks.com
+
+  ## Optionally, there could be 'staging' or 'prod' targets here.
+  #
+  # prod:
+  #   workspace:
+  #     host: https://dbc-692c9f37-d636.cloud.databricks.com
